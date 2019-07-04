@@ -1,1 +1,1 @@
-# Projects in C progrmaming language
+# Projects in C programming language
