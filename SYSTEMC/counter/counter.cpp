@@ -15,6 +15,7 @@ SC_MODULE(counter)
  protected:
   //signals
   sc_dt::sc_uint<4> count_sig;
+  //sc_core::sc_signal<sc_dt::sc_uint<4>> count_sig; //baca posle error jer mu se ne svidja sc_uint + 1 u racunanju posle;
   void do_process();
 };
 
@@ -32,8 +33,7 @@ void counter::do_process()
       count_sig = 0;
       q.write(count_sig);
     } else if (en.read() == 1){
-    count_sig = count_sig + 1;//ovde je sve ok ali ne radi increment
-    //count_sig = count_sig + 1; //ako ovo vazi onda vraca gresku da nije dobro preklopljen operator
+    count_sig = count_sig + 1;//ovde je sve ok ali ne radi increment ako je count_sig signal, a ne varijabla
     q.write(count_sig);
   }
 }
