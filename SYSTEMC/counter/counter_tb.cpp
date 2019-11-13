@@ -34,7 +34,7 @@ counter_tb::counter_tb(sc_core::sc_module_name n)
 
   SC_THREAD(driver);
   SC_METHOD(monitor);
-  sensitive<<clk<<reset<<en<<q;
+  sensitive<<clk<<reset<<en;
 }
 
 
@@ -44,18 +44,27 @@ void counter_tb::driver()
   reset = 1;
   en = 1;
   for (i=0;i<5;i++) {
-    clk = 0; 
+    clk = 0;
     sc_start(1, sc_core::SC_NS);
-    clk = 1; 
+    clk = 1;
     sc_start(1, sc_core::SC_NS);
   }
   reset = 0;
-  for (i=0;i<5;i++) {
-    clk = 0; 
+  for (i=0;i<8;i++) {
+    clk = 0;
     sc_start(1, sc_core::SC_NS);
-    clk = 1; 
+    clk = 1;
     sc_start(1, sc_core::SC_NS);
   }
+  en = 0;
+  for (i=0;i<4;i++) {
+    clk = 0;
+    sc_start(1, sc_core::SC_NS);
+    clk = 1;
+    sc_start(1, sc_core::SC_NS);
+  }
+
+
 
 }
 

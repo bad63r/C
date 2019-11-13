@@ -14,7 +14,7 @@ SC_MODULE(counter)
   counter(sc_core::sc_module_name n);
  protected:
   //signals
-  sc_core::sc_signal<sc_dt::sc_uint<4>> count_sig;
+  sc_dt::sc_uint<4> count_sig;
   void do_process();
 };
 
@@ -32,7 +32,7 @@ void counter::do_process()
       count_sig = 0;
       q.write(count_sig);
     } else if (en.read() == 1){
-    count_sig = count_sig + (sc_dt::sc_unsigned)1;//ovde je sve ok ali ne radi increment
+    count_sig = count_sig + 1;//ovde je sve ok ali ne radi increment
     //count_sig = count_sig + 1; //ako ovo vazi onda vraca gresku da nije dobro preklopljen operator
     q.write(count_sig);
   }
