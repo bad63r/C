@@ -9,6 +9,7 @@ class memory :
 	public tlm::tlm_fw_transport_if<>
 {
 public:
+  SC_HAS_PROCESS(memory);
 	memory(sc_core::sc_module_name);
 
 	tlm::tlm_target_socket<> tsoc;
@@ -24,7 +25,6 @@ public:
 protected:
 	static const int RAM_SIZE = 1024;
 	unsigned char ram[RAM_SIZE];
-  //float* ram_fl = reinterpret_cast<float*>(ram);
 };
 
 #endif

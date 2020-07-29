@@ -1,10 +1,10 @@
 #ifndef _GENERATOR_HPP_
 #define _GENERATOR_HPP_
 
-#define SC_INCLUDE_DYNAMIC_PROCESSES
-
 #include <systemc>
-#include <tlm.h>
+#include <tlm>
+#include "mem_manager.hpp"
+#include <tlm_utils/peq_with_cb_and_phase.h>
 
 class generator :
 	public sc_core::sc_module,
@@ -15,6 +15,9 @@ public:
 
 	tlm::tlm_initiator_socket<> isoc;
 
+  //sc_core::sc_in<bool>i_clk;
+  //sc_core::sc_out<bool>start;
+
 	typedef tlm::tlm_base_protocol_types::tlm_payload_type pl_t;
 	typedef tlm::tlm_base_protocol_types::tlm_phase_type phase_t;
 
@@ -23,9 +26,12 @@ public:
 
 protected:
 	void gen();
-	bool dmi_valid;
-	unsigned char* dmi_mem;
-  float* dmi_mem_fl= reinterpret_cast<float*>(dmi_mem);
+	bool req_in_progess;
+	sc_core::sc_event req_done;
+	tlm_utils::peq_with_cb_and_phase<generator> m_peq;
+	mem_manager mm;
+
+	void cb_peq(tlm::tlm_generic_payload&, const tlm::tlm_phase&);
 };
 
 #endif

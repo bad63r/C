@@ -7,6 +7,7 @@ using namespace tlm;
 
 int sc_main(int argc, char* argv[])
 {
+
 	memory mem ("memory_u");
 	generator gen("generator_u");
 	gen.isoc(mem.tsoc);

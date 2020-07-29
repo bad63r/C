@@ -11,7 +11,11 @@ memory::memory(sc_module_name name) :
 	tsoc(*this);
 	for (int i = 0; i != RAM_SIZE; ++i)
 		ram[i] = 0;
+
+
+
 }
+
 
 void memory::b_transport(pl_t& pl, sc_time& offset)
 {

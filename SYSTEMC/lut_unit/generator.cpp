@@ -94,19 +94,19 @@ void generator::gen()
 
     //start je 1/0
 
-    float start_array[2] = {1,0};
+    unsigned char start_array[2] = {1,0};
     for(int s = 0;s<2;s++)
       {
         if(req_in_progess)
           wait(req_done);
         req_in_progess = true;
 
-        data_fl[0] = start_array[s];
+        data[0] = start_array[s];
         addr = 796;
 
         pl->set_command         ( TLM_WRITE_COMMAND       );
         pl->set_address         ( addr                       );
-        pl->set_data_length     ( 4                       );
+        pl->set_data_length     ( 1                       );
         pl->set_response_status ( TLM_INCOMPLETE_RESPONSE );
         pl->acquire();
 
