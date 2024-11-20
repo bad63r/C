@@ -1,0 +1,25 @@
+(undo-tree-save-format-version . 1)
+"5dcb7b2b5e16e3c584616c6ae88fa9f01abe3b28"
+[nil nil nil nil (26430 19245 809982 557000) 0 nil]
+([nil nil ((1896 . 1899) (1894 . 1896) (1888 . 1894) (#(" " 0 1 (c-in-sws t face font-lock-comment-delimiter-face fontified t)) . -1888) (undo-tree-id8 . -1) 1889 (1888 . 1889) (1884 . 1886) (#("        " 0 1 (c-is-sws t fontified nil) 1 2 (c-is-sws t fontified nil) 2 3 (c-is-sws t fontified nil) 3 4 (c-is-sws t fontified nil) 4 5 (c-is-sws t fontified nil) 5 6 (c-is-sws t fontified nil) 6 7 (c-is-sws t fontified nil) 7 8 (c-is-sws t fontified nil)) . 1884) (1892 . 1894) (1886 . 1892) (1884 . 1886) (#(" " 0 1 (c-is-sws t fontified t)) . -1884) (undo-tree-id9 . -1) 1885 (#(" " 0 1 (c-is-sws t fontified t)) . -1885) (undo-tree-id10 . -1) 1886 (1884 . 1886) (#(" " 0 1 (c-in-sws t c-is-sws t fontified t)) . -1884) (undo-tree-id11 . -1) 1885 (#(" " 0 1 (c-in-sws t fontified t)) . -1885) (undo-tree-id12 . -1) 1886 (1884 . 1886) (#("  " 0 1 (c-is-sws t fontified nil) 1 2 (c-is-sws t c-in-sws t fontified nil)) . 1883) (undo-tree-id13 . -2) (1885 . 1886) (1882 . 1885) (t 26430 19063 828463 909000) 1857) nil (26430 19245 809981 35000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 1900 . 1901) (#("
+" 0 1 (fontified nil)) . -2069) (1899 . 2070) 1898) nil (26430 19245 809977 548000) 0 nil])
+([nil nil ((#("  //LED GPIO
+" 0 1 (c-is-sws t fontified t) 1 2 (c-in-sws t fontified t) 2 3 (face font-lock-comment-delimiter-face c-in-sws t fontified t) 3 4 (face font-lock-comment-delimiter-face c-in-sws t fontified t) 4 5 (face font-lock-comment-face c-in-sws t fontified t) 5 6 (face font-lock-comment-face c-in-sws t fontified t) 6 7 (face font-lock-comment-face c-in-sws t fontified t) 7 8 (face font-lock-comment-face c-in-sws t fontified t) 8 9 (face font-lock-comment-face c-in-sws t fontified t) 9 10 (face font-lock-comment-face c-in-sws t fontified t) 10 11 (face font-lock-comment-face c-in-sws t fontified t) 11 12 (face font-lock-comment-face c-in-sws t fontified t) 12 13 (c-in-sws t face font-lock-comment-face fontified t)) . 1884) (undo-tree-id6 . -12) (undo-tree-id7 . -8) 1892) nil (26430 19245 809977 37000) 0 nil])
+([nil nil ((#("  
+" 0 1 (c-in-sws t c-is-sws t fontified t) 1 2 (c-in-sws t c-is-sws t fontified t) 2 3 (c-is-sws t fontified t)) . 1884) (undo-tree-id4 . -2) (undo-tree-id5 . -1) 1885) nil (26430 19245 809974 403000) 0 nil])
+([nil nil ((1887 . 1892)) nil (26430 19245 809973 541000) 0 nil])
+([nil nil ((2063 . 2064)) nil (26430 19245 809973 45000) 0 nil])
+([nil nil ((#("	GPIOC->ODR |= (0b1 << 10);
+" 0 15 (fontified t) 15 16 (face (rainbow-delimiters-depth-2-face) fontified t) 16 25 (fontified t) 25 26 (face (rainbow-delimiters-depth-2-face) fontified t) 26 27 (fontified t) 27 28 (fontified t)) . 2031) (undo-tree-id2 . -27) (undo-tree-id3 . -3) 2034) nil (26430 19245 809972 554000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 2785 . 2786) (#("
+" 0 1 (fontified nil)) . -2812) (2784 . 2813)) nil (26430 19245 809971 343000) 0 nil])
+([nil nil ((2785 . 2790) (#("	" 0 1 (rear-nonsticky t fontified t)) . -2785) (undo-tree-id1 . -1) 2786) nil (26430 19245 809970 689000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 2784) (undo-tree-id0 . -1)) nil (26430 19245 809966 513000) 0 nil])
+([nil nil ((2777 . 2781) (t 26430 19245 812185 7000)) nil (26430 19870 41389 672000) 0 nil])
+([nil nil ((#("GPIOB->IDR & (0b1 <<6)" 0 13 (fontified t) 13 14 (face (rainbow-delimiters-depth-4-face) fontified t) 14 21 (fontified t) 21 22 (face (rainbow-delimiters-depth-4-face) fontified t)) . 2755) (undo-tree-id14 . -21) (undo-tree-id15 . -21) (undo-tree-id16 . -21)) nil (26430 19870 41389 145000) 0 nil])
+([nil nil ((2757 . 2758) (2748 . 2752) (#("	  " 0 3 (c-in-sws t c-is-sws t fontified nil)) . 2748) (2755 . 2756)) nil (26430 19870 41378 685000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 2778 . 2779) (nil fontified nil 2757 . 2779) (2757 . 2779) 2756) nil (26430 19870 41377 640000) 0 nil])
+([nil current ((2784 . 2785) (#(" " 0 1 (fontified t)) . 2784) (2783 . 2784)) nil (26430 19870 41372 84000) 0 nil])
+nil
